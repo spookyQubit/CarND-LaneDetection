@@ -32,11 +32,11 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ![alt text][image1]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings with the current pipeline
 Even after implementing a smoothing function to average over the stream of previously seen images, the drawn lane lines sometime fluctuate a lot. This can potentially be overcome by fine-tuning the std_threshold in the draw_median_lines() function. Also, if the lanes are too curved, the assumption of using only one line to represent a lane can break down.   
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible improvements to the pipeline
 
 
 A possible improvement would be to fine tune the parameters used in the draw_median_lines() function: count_threshold, std_threshold to give less fluctuating lines. 
