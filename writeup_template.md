@@ -42,10 +42,3 @@ Even after implementing a smoothing function to average over the stream of previ
 A possible improvement would be to fine tune the parameters used in the draw_median_lines() function: count_threshold, std_threshold to give less fluctuating lines. 
 
 Another possibility could be to use a clustering algorithm (for example K-means) to identify two clusters of points, one cluster for Canny edge detected points for left lane and the other cluster for the right lane. A potential way to go about implementing the clustering would be to only use the x co-ordinates of the points to determine the cluster. After one gets the two clusters of points, one can then fit a polynomial (say a quadratic function) on each cluster of points giving a polynomial fit to the left and the right lane.   
-
-
-
-
-* mask R-CNN.
-
-
