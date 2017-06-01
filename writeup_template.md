@@ -1,11 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Goal
-
-### Make a pipeline that finds lane lines on the road.
-
----
-
 **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
