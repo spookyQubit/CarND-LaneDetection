@@ -1,17 +1,12 @@
 # **Finding Lane Lines on the Road** 
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
+The goal of this project is to make a pipeline that finds the left/right lane lines on the road between which a car is moving. 
 
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 
 ---
-
-### Reflection
 
 ### 1. Pipeline
 
