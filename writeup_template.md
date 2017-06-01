@@ -35,17 +35,13 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ### 2. Identify potential shortcomings with your current pipeline
 Even after implementing a smoothing function to average over the stream of previously seen images, the drawn lane lines sometime fluctuate a lot. This can potentially be overcome by fine-tuning the std_threshold in the draw_median_lines() function. Also, if the lanes are too curved, the assumption of using only one line to represent a lane can break down.   
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
 
 ### 3. Suggest possible improvements to your pipeline
 
 
-A possible improvement would be to fine tune the parameters used in the draw_median_lines() function: count_threshold, std_threshold. 
+A possible improvement would be to fine tune the parameters used in the draw_median_lines() function: count_threshold, std_threshold to give less fluctuating lines. 
 
-Another potential improvement could be to ..
+Another possibility could be to use a clustering algorithm (for example K-means) to identify two clusters of points, one cluster for Canny edge detected points for left lane and the other cluster for the right lane. A potential way to go about implementing the clustering would be to only use the x co-ordinates of the points to determine the cluster. After one gets the two clusters of points, one can then fit a polynomial (say a quadratic function) on each cluster of points giving a polynomial fit to the left and the right lane.   
 
 
 
