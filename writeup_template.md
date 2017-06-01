@@ -27,11 +27,6 @@ My pipeline consisted of the following steps:
      * If only the information from the current image is used, the lines fluctuate a lot and give a poor performance. In order to improve performance, we store the meadian slope and intercept of all previos images in the video stream. If the current calculated median intercept/slope is way too differnt from the mean of the previously seen intercept/slope, we discard the currently calculated intercept/slope, and instead use the mean of the previously calculated intercept/slope to draw the positive and negative slope lines.   
 
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-
-
 ### 2. Potential shortcomings with the current pipeline
 Even after implementing a smoothing function to average over the stream of previously seen images, the drawn lane lines sometime fluctuate a lot. This can potentially be overcome by fine-tuning the std_threshold in the draw_median_lines() function. Also, if the lanes are too curved, the assumption of using only one line to represent a lane can break down.   
 
