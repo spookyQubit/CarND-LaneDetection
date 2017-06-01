@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 ### 1. Pipeline
 
-My pipeline consisted of 5 steps. 
+My pipeline consisted of the following steps: 
   * Convert the image to gray-scale
   * Apply gaussian blur
   * Apply Canny edge detection
